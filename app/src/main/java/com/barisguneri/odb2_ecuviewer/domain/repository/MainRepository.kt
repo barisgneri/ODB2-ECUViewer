@@ -1,0 +1,3 @@
+package com.barisguneri.odb2_ecuviewer.domain.repository
+
+interface MainRepository
