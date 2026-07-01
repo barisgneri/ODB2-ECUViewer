@@ -83,4 +83,10 @@ dependencies {
 
     // Kotlinx Serialization
     implementation(libs.kotlinx.serialization)
+
+    implementation(project(":core:model"))
+    implementation(project(":core:obd"))
+    implementation(project(":core:bluetooth"))
+    implementation(project(":core:design"))
+    implementation(project(":feature:gauge"))
 }

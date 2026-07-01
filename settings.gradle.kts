@@ -24,4 +24,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "ODB2-ECUViewer"
 include(":app")
- 
+include(":core:model")
+include(":core:obd")
+include(":core:bluetooth")
+include(":core:design")
+
+include(":feature:gauge")
