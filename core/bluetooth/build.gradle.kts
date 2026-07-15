@@ -3,6 +3,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt.plugin)
 }
 
 android {
@@ -26,5 +28,7 @@ dependencies {
     implementation(project(":core:model"))
 
     implementation(libs.lifecycle.runtime.ktx)
-    // Coroutines, Flow vb. kütüphaneler
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.datastore.preferences)
+    ksp(libs.hilt.compiler)
 }
